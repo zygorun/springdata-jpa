@@ -45,6 +45,7 @@ public interface EmployeeRepository {//extends Repository<Employee,Integer> {
      @Query(nativeQuery = true,value = "select count(1) from employee")
      long getCount();
 
+     //delete、update、save都需要声明事务
      @Modifying
      @Query("update Employee o set username=:name where id=:id")
      void update(@Param("name") String username,@Param("id") Integer id);

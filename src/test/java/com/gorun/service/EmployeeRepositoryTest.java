@@ -6,7 +6,7 @@ import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-public class EmployeeRepositoryServiceTest {
+public class EmployeeRepositoryTest {
     private EmployeeService employeeService = null;
     private ApplicationContext ctx= null;
 
