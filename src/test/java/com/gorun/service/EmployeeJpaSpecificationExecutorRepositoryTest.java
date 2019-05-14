@@ -32,7 +32,7 @@ public class EmployeeJpaSpecificationExecutorRepositoryTest {
         Sort sort = new Sort(order);
         /**
          * root：代表我们要查询的类型(Employee)
-         * criteriaQuery：添加查询条件
+         * query：添加查询条件
          * cb：Predicate
          */
         Specification<Employee> specification = new Specification<Employee>() {
